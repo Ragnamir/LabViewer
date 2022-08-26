@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "name": "Georgiy Fedorov",
+      "hosts": [
+        "n106529"
+      ]
+    },
+    {
+      "name": "Alexander Scherbakov",
+      "hosts": [
+        "n106859"
+      ]
+    },
+    {
+      "name": "Pavel Pankrushev",
+      "hosts": [
+        "n106575"
+      ]
+    },
+    {
+      "name": "Dmitry Chivikin",
+      "hosts": [
+        "n104097"
+      ]
+    },
+    {
+      "name": "Alexander Tolstunov",
+      "hosts": [
+        "n105057"
+      ]
+    },
+    {
+      "name": "Aizat Nugumanov",
+      "hosts": [
+        "k106997"
+      ]
+    },
+    {
+      "name": "Alexander Druzhinin",
+      "hosts": [
+        "n104759",
+		"n103779"
+      ]
+    }
+  ]
+}

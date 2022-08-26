@@ -1,0 +1,16 @@
+{"labs":
+	[{"name":"First",
+	"labPCs":
+		[{"ipAddress":"192.168.37.101","name":"core","state":""},
+		{"ipAddress":"192.168.37.102","name":"db","state":""},
+		{"ipAddress":"192.168.37.103","name":"admin","state":""},
+		{"ipAddress":"192.168.37.104","name":"client","state":""}]
+	},
+	{"name":"Second",
+	"labPCs":
+		[{"ipAddress":"192.168.37.211","name":"core","state":""},
+		{"ipAddress":"192.168.37.212","name":"db","state":""},
+		{"ipAddress":"192.168.37.213","name":"admin","state":""},
+		{"ipAddress":"192.168.37.214","name":"client","state":""}
+	]}
+]}
