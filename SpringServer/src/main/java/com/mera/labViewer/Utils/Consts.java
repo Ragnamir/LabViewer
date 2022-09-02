@@ -24,4 +24,7 @@ public class Consts {
 	public static final String ERROR_LOADING_CONFIG = "config loading ERROR!";
 	public static final String SCHEDULED_TASK_INPROGRESS = "Scheduled task in progress";
 	public static final String PROCESSING_LAB = "Processing lab ";
+	public static final String REQUEST_URL = "Request for ";
+	public static final String REPLY_URL = "Got reply for ";
+	public static final String UPDATING_FRONT = "Got updates. Sending to front-end.";
 }

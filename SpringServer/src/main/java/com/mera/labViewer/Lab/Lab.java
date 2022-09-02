@@ -1,6 +1,7 @@
 package com.mera.labViewer.Lab;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import com.mera.labViewer.Utils.Consts;
 
@@ -78,17 +79,49 @@ public class Lab {
 		return null;
 	}
 	
-	public void updateLab(Lab loadedLab) {
-		this.setName(loadedLab.getName());
+	public boolean updateLab(Lab loadedLab) {
+		boolean flag = false;
+
+		if (!getName().equals(loadedLab.getName())) {
+			flag = true;
+			setName(loadedLab.getName());
+		}
+
+		if (!getVmWareURI().equals(loadedLab.getVmWareURI())) {
+			flag = true;
+			setVmWareURI(loadedLab.getVmWareURI());
+		}
+
+		if (!getVmWareUsername().equals(loadedLab.getVmWareUsername())) {
+			flag = true;
+			setVmWareUsername(loadedLab.getVmWareUsername());
+		}
+
+		if (!getVmWarePwd().equals(loadedLab.getVmWarePwd())) {
+			flag = true;
+			setVmWarePwd(loadedLab.getVmWarePwd());
+		}
 		
 		for (LabPC loadedPC : loadedLab.getLabPCs()) {
 			LabPC labPC = getPCByIp(loadedPC.getIpAddress());
 			if (null == labPC) {
+				flag = true;
 				labPCs.add(loadedPC);
 			} else {
-				labPC.updatePC(loadedPC);
+				flag = flag ||labPC.updatePC(loadedPC);
 			}
 		}
+
+		Iterator<LabPC> iter = getLabPCs().iterator();
+		while (iter.hasNext()) {
+			LabPC labPC = iter.next();
+			if (loadedLab.getPCByIp(labPC.getIpAddress()) == null) {
+				flag = true;
+				iter.remove();
+			}
+		}
+
+		return flag;
 	}
 	
 	public void updateMessage(Lab loadedLab) {

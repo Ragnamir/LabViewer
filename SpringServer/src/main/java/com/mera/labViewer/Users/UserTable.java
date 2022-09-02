@@ -10,12 +10,12 @@ import com.mera.labViewer.Utils.Consts;
 public class UserTable {
 	private ArrayList<User> users;
 
-	protected UserTable(ArrayList<User> users) {
+	public UserTable(ArrayList<User> users) {
 		super();
 		this.users = users;
 	}
 
-	protected UserTable() {
+	public UserTable() {
 		super();
 		this.users = new ArrayList<User>();
 	}
