@@ -27,8 +27,10 @@ public class UIDataController {
 
     @MessageMapping("/updatelab")
     public void updateLab(AllLabs labs) throws Exception {
-        logger.info("Got request for updating labs: " + labs.toString());
+        logger.info("Got request for updating labs: ");
+        logger.info(labs.toString());
         allLabs.updateLabs(labs);
+        logger.info(allLabs.toString());
         scherduledUpdater.saveLabConfig();
     }
 

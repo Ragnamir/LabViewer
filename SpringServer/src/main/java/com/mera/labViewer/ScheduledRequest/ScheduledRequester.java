@@ -68,7 +68,7 @@ public class ScheduledRequester {
 		}
 	}
 
-	@Scheduled(fixedDelay = 5000)
+	@Scheduled(fixedDelay = 10000)
 	public void updateLabs() {
 
 		logger.debug(Consts.SCHEDULED_TASK_INPROGRESS);

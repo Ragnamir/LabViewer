@@ -59,7 +59,7 @@ public class AllLabs {
 				setUpdated(true);
 				labs.add(loadedLab);
 			} else {
-				setUpdated(isUpdated() || lab.updateLab(loadedLab));
+				setUpdated(lab.updateLab(loadedLab) || isUpdated());
 			}
 		}
 

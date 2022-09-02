@@ -108,7 +108,7 @@ public class Lab {
 				flag = true;
 				labPCs.add(loadedPC);
 			} else {
-				flag = flag ||labPC.updatePC(loadedPC);
+				flag = labPC.updatePC(loadedPC) || flag;
 			}
 		}
 
