@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\rdp]
+@="URL:Remote Desktop Connection"
+"URL Protocol"=""
+[HKEY_CLASSES_ROOT\rdp\DefaultIcon]
+@="C:\\WINDOWS\\System32\\mstsc.exe"
+[HKEY_CLASSES_ROOT\rdp\shell]
+[HKEY_CLASSES_ROOT\rdp\shell\open]
+[HKEY_CLASSES_ROOT\rdp\shell\open\command]
+@="wscript.exe C:\\WINDOWS\\rdp.js %1"

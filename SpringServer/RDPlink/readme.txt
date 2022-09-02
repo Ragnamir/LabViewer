@@ -1,0 +1,1 @@
+In order for RDP links to work, run batch file and allow it to do it's job.
